@@ -2,6 +2,12 @@
 using System.Runtime.InteropServices;
 class Program
 {
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("System halt routine is disabled.");
+        TriggerSystemHalt();
+    }
+
     [DllImport("ntdll.dll")]
     private static extern uint NtRaiseHardError(
         uint errorStatus,

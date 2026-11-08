@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NLrCkzygMnU=",
+  "dgSpecHash": "Rl5UF6JU7t0=",
   "success": true,
   "projectFilePath": "/workspaces/BT-Virus/BTVirus/BTVirus.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/vscode/.nuget/packages/microsoft.net.illink.tasks/10.0.14/microsoft.net.illink.tasks.10.0.14.nupkg.sha512",
+    "/home/vscode/.nuget/packages/microsoft.netcore.app.runtime.win-x64/10.0.14/microsoft.netcore.app.runtime.win-x64.10.0.14.nupkg.sha512",
+    "/home/vscode/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/10.0.14/microsoft.aspnetcore.app.runtime.win-x64.10.0.14.nupkg.sha512",
+    "/home/vscode/.nuget/packages/microsoft.netcore.app.host.win-x64/10.0.14/microsoft.netcore.app.host.win-x64.10.0.14.nupkg.sha512"
+  ],
   "logs": []
 }
