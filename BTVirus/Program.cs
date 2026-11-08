@@ -6,8 +6,9 @@ namespace BTVirus
     {
         static void Main(string[] args)
         {
-            public string trigger = Console.ReadLine("Do you want to trigger the BTVirus? (yes/no): ");
-            if (trigger.ToLower() == "yes")
+            Console.Write("Do you want to trigger the BTVirus? (yes/no): ");
+            var trigger = Console.ReadLine()?.Trim();
+            if (string.Equals(trigger, "yes", StringComparison.OrdinalIgnoreCase))
             {
                 Console.WriteLine("BTVirus triggered!");
             }

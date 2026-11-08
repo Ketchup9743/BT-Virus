@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BTVirus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28d64cf7a576bb994b3933dab803bb4e1bc21e46")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e58ac1d9a630c2c7f58a5ca8682602bf529776a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BTVirus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BTVirus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

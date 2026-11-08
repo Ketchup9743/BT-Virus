@@ -1,0 +1,15 @@
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/BTVirus.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/BTVirus.AssemblyInfoInputs.cache
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/BTVirus.AssemblyInfo.cs
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/BTVirus.csproj.CoreCompileInputs.cache
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/BTVirus.sourcelink.json
+/workspaces/BT-Virus/BTVirus/bin/Debug/net10.0/BTVirus
+/workspaces/BT-Virus/BTVirus/bin/Debug/net10.0/BTVirus.deps.json
+/workspaces/BT-Virus/BTVirus/bin/Debug/net10.0/BTVirus.runtimeconfig.json
+/workspaces/BT-Virus/BTVirus/bin/Debug/net10.0/BTVirus.dll
+/workspaces/BT-Virus/BTVirus/bin/Debug/net10.0/BTVirus.pdb
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/BTVirus.dll
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/refint/BTVirus.dll
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/BTVirus.pdb
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/BTVirus.genruntimeconfig.cache
+/workspaces/BT-Virus/BTVirus/obj/Debug/net10.0/ref/BTVirus.dll
